@@ -1,5 +1,4 @@
-drop table if exists Post;
-drop table if exists Member;
+drop table if exists MEMBER_INFO;
 create table MEMBER_INFO
 (
     user_no int primary key auto_increment,
