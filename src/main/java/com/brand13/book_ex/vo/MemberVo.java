@@ -1,14 +1,18 @@
 package com.brand13.book_ex.vo;
 
+// import java.util.Date;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 
-@Setter
 @Getter
-@NoArgsConstructor
+@Setter
+@RequiredArgsConstructor
 public class MemberVo {
-    private String user_no;
-	private String user_nm;
-	private String user_id;	
+	private final String userid;	
+    private final String userpw;
+	private final String username;
+	private final String email;
+	// private Date regdate;
+	// private Date updateDate;
 }

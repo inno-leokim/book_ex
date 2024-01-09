@@ -24,4 +24,18 @@ public class MemberController {
 
         return memberList;
     }
+
+    @GetMapping("/time")
+    public String getTime(){
+        return memberService.getTime();
+    }
+
+    @GetMapping("/member")
+    public MemberVo addMember(){
+        MemberVo memberVo = new MemberVo("brand13", "1233", "yun", "a@b.com");
+        
+        memberService.insertMember(memberVo);
+
+        return memberVo;
+    }
 }

@@ -1,7 +1,11 @@
-drop table if exists MEMBER_INFO;
-create table MEMBER_INFO
+drop table if exists tbl_member;
+create table tbl_member
 (
-    user_no int primary key auto_increment,
-    user_nm varchar(50) unique,
-    user_id varchar(50) not null
+    userid varchar(50) not null,
+    userpw varchar(50) not null,
+    username varchar(50) not null,
+    email varchar(100),
+    regdate timestamp default now(),
+    updatedate timestamp default now(),
+    PRIMARY KEY(userid)
 );
