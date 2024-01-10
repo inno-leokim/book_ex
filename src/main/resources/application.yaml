@@ -11,8 +11,9 @@ spring:
       enabled: ALWAYS
   sql:
     init:
+      encoding: utf-8
       mode: always
-
+      
 mybatis:
   config-location: classpath:mybatis-config.xml
   mapper-locations: /mapper/*.xml
